@@ -15,7 +15,7 @@ body {
 
 /*** HEADER ***/
 header {
-    background-color: goldenrod;
+    background-color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,33 +87,23 @@ section {
 .video iframe {
     display: flex;
     align-content: center;
-    height: 400px;
+    height: 450px;
     width: 75%;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .imagenes {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
 }
-.tafi1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.tafi {
+    height: 450px;
     width: 50%;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.tafi2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50%;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
 
 /****** NOSOTROS ******/
 .Nosotros {
@@ -206,7 +196,7 @@ section {
 
 /**** FOOTER ****/
 footer {
-    background-color: rgba(75, 75, 75, 0.599);
+    background-color: black;
     color: antiquewhite;
     display: flex;
     justify-content: space-between;
@@ -228,4 +218,15 @@ footer {
 }
 .footer__info img {
     width: 50px;
+}
+@media (max-width: 600px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tafi {
+        height: 350px;
+        width: 100%;
+    }
+    
 }
