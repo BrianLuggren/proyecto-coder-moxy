@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Roboto Slab', serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: lighter;
-    background-color: burlywood;
     text-decoration: none;
+    background-color: rgba(159, 18, 18, 0.755);
 }
 
 
@@ -44,7 +44,6 @@ header h1 {
     font-weight: 700;
 }
 .enlaces a {
-    display: flex;
     text-decoration: none;
     color: antiquewhite;
 }
@@ -65,12 +64,10 @@ section {
     color: antiquewhite;
 }
 .portada h3 {
-    display: flex;
     text-align: center;
     padding: 5px;
 }
 .Mox {
-    display: flex;
     text-align: center;
 }
 .portada p {
@@ -85,8 +82,6 @@ section {
     padding: 15px;
 }
 .video iframe {
-    display: flex;
-    align-content: center;
     height: 450px;
     width: 75%;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -114,22 +109,16 @@ section {
     color: antiquewhite;
 }
 .Nosotros h3 {
-    display:flex;
     margin-bottom: 10px;
     margin-top: 10px;
 
 }
 .Nosotros p {
-    display:flex;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    text-align: center;
 }
 .Nosotros img{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     width: 97%;
     height: 750px;
     padding-left: 10px;
@@ -142,12 +131,10 @@ section {
     color: antiquewhite;
 }
 .cabaña1 p {
-    display:flex;
     width: 50%;
     padding: 10px;
 }
 .cabaña1 img {
-    display:flex;
     padding: 10px;
     width: 50%;
 }
@@ -160,25 +147,52 @@ section {
     color: antiquewhite;
 }
 .cabaña2 p{
-    display:flex;
-    flex-direction: column;
     width: 50%;
     padding: 10px;
 }
 .cabaña2 img {
-    display:flex;
-    flex-direction: column;
     padding: 10px;
     width: 50%;
 }
 
 
 /**** CONTACTO ****/
+#gridContanto {
+    display: grid;
+    grid-template-areas: 
+    "header   header    header"
+    "seccion1 seccion1  aside"
+    "seccion2 seccion2  aside"
+    "footer   footer    footer";
+ }
+header {
+    grid-area: header;
+ }
+ #seccion1 {
+    grid-area: seccion1;
+ }
+ #seccion2 {
+    grid-area: seccion2;
+ }
+aside {
+    grid-area: aside;
+ }
+ .asideContacto {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+ }
+ .asideContacto img {
+    width: 200px;
+    height: 100%;
+ }
+footer {
+    grid-area: footer;
+ }
+ 
 
-#formulario {
-    margin: 0px;
-    padding: 15px;
-}
 
 
 /**** ACTIVIDADES ****/
@@ -219,6 +233,7 @@ footer {
 .footer__info img {
     width: 50px;
 }
+
 @media (max-width: 600px) {
     .imagenes {
         flex-direction: column;
