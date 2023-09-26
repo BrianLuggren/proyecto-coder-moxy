@@ -159,21 +159,22 @@ section {
 
 
 /**** CONTACTO ****/
-#gridContanto {
+ #gridContanto {
     display: grid;
     grid-template-areas: 
     "header   header    header"
     "seccion1 seccion1  aside"
     "seccion2 seccion2  aside"
     "footer   footer    footer";
-    max-height: 100%;
+    min-height: 100vh;
     grid-template-columns: 70% 1fr 1fr;
  }
-header {
+ header {
     grid-area: header;
  }
  #seccion1 {
     grid-area: seccion1;
+    height: 500px;
  }
  #seccion2 {
     grid-area: seccion2;
@@ -183,10 +184,8 @@ header {
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
-        
  }
- .llegar
-aside {
+ .aside {
     grid-area: aside;
  }
  .asideContacto {
@@ -201,7 +200,7 @@ aside {
     padding: 5px 0px;
     margin-right: 5px;
  }
-footer {
+ footer {
     grid-area: footer;
  }
  
@@ -245,14 +244,85 @@ footer {
     width: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .imagenes {
         flex-direction: column;
         align-items: center;
     }
     .tafi {
-        height: 350px;
+        height: 400px;
         width: 100%;
+    }
+    .cabaña1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña1 img {
+        height: 400px;
+        width: 100%;
+    }
+    .cabaña1 p {
+        width: 100%;
+    }
+    .cabaña2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña2 img {
+        height: 400px;
+        width: 100%;
+    }
+    .cabaña2 p {
+        width: 100%;
+    }
+    .Nosotros img {
+        object-fit: cover;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tafi {
+        height: 300px;
+        width: 100%;
+    }
+    .video iframe {
+        width: 100%;
+    }
+    .Nosotros img {
+        height: 500px;
+    }
+    .cabaña1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña1 img {
+        height: 300px;
+        width: 100%;
+    }
+    .cabaña1 p {
+        width: 100%;
+    }
+    .cabaña2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña2 img {
+        height: 300px;
+        width: 100%;
+    }
+    .cabaña2 p {
+        width: 100%;
+    }
+    .Nosotros img {
+        object-fit: cover;
+    }
+    .footer {
+        flex-direction: column;
     }
     
 }
+
