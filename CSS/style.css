@@ -239,7 +239,6 @@ section {
 }
 .suite {
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
     margin: 20px;
 }
@@ -247,11 +246,16 @@ section {
     display:flex;
     align-items: start;
     flex-direction: row-reverse;
+    width: 100%;
     padding-bottom: 25px;
+}
+.suiteMatrimonial img {
+    width: 50%;
 }
 .suiteInfo {
     padding: 45px;
     margin-top: 50px;
+    width: 50%;
 }
 .suiteInfo h4 {
     font-size: 1.5em;
@@ -274,6 +278,7 @@ section {
 .NOTA {
     border: 5px solid darkred;
     font-weight: bolder;
+    margin-top: 35px;
 }
 .tituloServicio {
     line-height: 1.5em;
@@ -293,6 +298,9 @@ section {
     flex-direction: column;
     list-style: square;
     margin-bottom: 10px;
+}
+.serviciosIncluidos p {
+    font-weight: bolder;
 }
 
 
@@ -326,6 +334,7 @@ footer {
     width: 50px;
 }
 
+ /****INDEX TABLET ****/
 @media (max-width: 768px) {
     .imagenes {
         flex-direction: column;
@@ -333,7 +342,7 @@ footer {
     }
     .tafi {
         height: 400px;
-        width: 100%;
+        width: 90%;
     }
     .cabaña1 {
         flex-direction: column;
@@ -341,10 +350,10 @@ footer {
     }
     .cabaña1 img {
         height: 400px;
-        width: 100%;
+        width: 90%;
     }
     .cabaña1 p {
-        width: 100%;
+        width: 90%;
     }
     .cabaña2 {
         flex-direction: column;
@@ -352,15 +361,16 @@ footer {
     }
     .cabaña2 img {
         height: 400px;
-        width: 100%;
+        width: 90%;
     }
     .cabaña2 p {
-        width: 100%;
+        width: 90%;
     }
     .Nosotros img {
         object-fit: cover;
     }
-} 
+}
+/**** INDEX MOBILE ****/
 @media screen and (max-width: 480px) {
     .imagenes {
         flex-direction: column;
@@ -368,10 +378,10 @@ footer {
     }
     .tafi {
         height: 300px;
-        width: 100%;
+        width: 90%;
     }
     .video iframe {
-        width: 100%;
+        width: 90%;
     }
     .Nosotros img {
         height: 500px;
@@ -382,10 +392,10 @@ footer {
     }
     .cabaña1 img {
         height: 300px;
-        width: 100%;
+        width: 90%;
     }
     .cabaña1 p {
-        width: 100%;
+        width: 90%;
     }
     .cabaña2 {
         flex-direction: column;
@@ -393,16 +403,64 @@ footer {
     }
     .cabaña2 img {
         height: 300px;
-        width: 100%;
+        width: 90%;
     }
     .cabaña2 p {
-        width: 100%;
+        width: 90%;
     }
     .Nosotros img {
         object-fit: cover;
     }
     .footer {
         flex-direction: column;
+    }
+    
+}
+/****HABITACIONES TABLET****/
+@media screen and (max-width: 768px) {
+    .suiteMatrimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+    .suiteMatrimonial img {
+        height: 450px;
+        width: 85%;
+        border-bottom: 10px solid darkred;
+    }
+    .suiteInfo {
+        padding-left: 60px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        padding-top: 0px;
+        width: 90%;
+    }
+    .servicios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/**** HABITACIONES MOBILE ****/
+@media screen and (max-width: 480px) {
+    .suiteMatrimonial {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    .suiteMatrimonial img {
+        height: 350px;
+        width: 100%;
+        border-bottom: 10px solid darkred;
+    }
+    .suiteInfo {
+        flex-direction: column;
+        padding-left: 60px;
+        padding-bottom: 60px;
+        padding-right: 60px;
+        padding-top: 0px;
+        width: 90%;
+    }
+    .NOTA {
+        margin-top: 30px;
     }
     
 }
