@@ -10,7 +10,7 @@ body {
     font-weight: lighter;
     text-decoration: none;
     list-style-type: none;
-    background-color: rgb(206, 183, 148);
+    background-color: rgb(255, 218, 172);
     color: black;
 }
 
@@ -157,13 +157,23 @@ section {
 /**** CONTACTO ****/
  #gridContanto {
     display: grid;
+    grid-template-columns: auto auto auto; /* Tres columnas igualmente distribuidas */
     grid-template-areas: 
-    "header   header    header"
-    "seccion1 seccion1  aside"
-    "seccion2 seccion2  aside"
-    "footer   footer    footer";
+        "header   header    header"
+        "seccion1 seccion1  aside"
+        "seccion2 seccion2  aside"
+        "footer   footer    footer";
     min-height: 100vh;
-    grid-template-columns: 70% 1fr 1fr;
+ }
+.mainContact{
+     display: grid;
+     grid-template-areas:
+         "seccion1 seccion1 seccion1"
+         "seccion2 seccion2 seccion2";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     grid-gap: 20px;
+     padding: 60px;
  }
  header {
     grid-area: header;
@@ -178,7 +188,19 @@ section {
     display:flex;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: center;
     width: 100%;
+ }
+.llegar iframe{
+    margin: 0 65px;
+    border-radius: 10px;
+}
+
+#comoLlegar{
+    margin-top: 15px;
+}
+ .estamos{
+    width: 70%;
  }
  .aside {
     grid-area: aside;
@@ -209,11 +231,11 @@ section {
 }
 .Habitaciones h2 {
     line-height: 1.5em;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .Habitaciones p {
-    line-height: 1.5em;
-    font-size: 1.5em;
+    line-height: 1.3em;
+    font-size: 1.3em;
 }
 .suite {
     display:flex;
@@ -225,29 +247,57 @@ section {
     display:flex;
     align-items: start;
     flex-direction: row-reverse;
-    border: 3px solid rgba(220, 20, 60, 0.522);
+    padding-bottom: 25px;
 }
 .suiteInfo {
     padding: 45px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
-.suiteInfo h2 {
+.suiteInfo h4 {
+    font-size: 1.5em;
     border-bottom: 1px solid black;
     margin-bottom: 15px;
 }
 .suiteInfo p {
     margin-bottom: 25px;
 }
+.suiteInfo a {
+    font-weight: 900;
+    text-decoration: none;
+    list-style: none;
+    color: brown;
+}
+.atardecer {
+    height: 450px;
+    width: 800px;
+}
+.NOTA {
+    border: 5px solid darkred;
+    font-weight: bolder;
+}
+.tituloServicio {
+    line-height: 1.5em;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.servicios {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.serviciosIncluidos {
+    display:flex;
+    flex-direction: column;
+    list-style: square;
+    margin-bottom: 10px;
+}
+
 
 
 /**** UBICACION ****/
-.map {
-    margin: 0px;
-    padding: 15px;
-}
-.map h3 {
-    text-align: center;
-}
 
 
 /**** FOOTER ****/
@@ -311,7 +361,6 @@ footer {
         object-fit: cover;
     }
 } 
-
 @media screen and (max-width: 480px) {
     .imagenes {
         flex-direction: column;
