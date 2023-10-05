@@ -1,0 +1,17 @@
+
+// Variables
+@import "./abstracts/variables";
+
+// Base
+@import "./base/reset";
+
+// Layout 
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/media_queries";
+
+// Pages 
+@import "./pages/index";
+@import "./pages/habitaciones";
+@import "./pages/contacto";

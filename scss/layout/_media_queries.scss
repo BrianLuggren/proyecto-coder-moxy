@@ -1,0 +1,138 @@
+ /****INDEX TABLET ****/
+ @media (max-width: 768px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 400px;
+            width: 90%;
+        }
+    }
+    .cabaña1 {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 400px;
+            width: 90%;
+        }
+        p {
+            width: 90%;
+        }
+    }
+    .cabaña2 {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 400px;
+            width: 90%;
+        }
+        p {
+            width: 90%;
+        }
+    }
+    .Nosotros img {
+        object-fit: cover;
+    }
+}
+/**** INDEX MOBILE ****/
+@media screen and (max-width: 480px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 300px;
+            width: 90%;
+        }
+    }
+    
+    .video iframe {
+        width: 90%;
+    }
+    .Nosotros img {
+        height: 500px;
+
+        & {
+            object-fit: cover;
+        }
+    }
+    .cabaña1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña1 img {
+        height: 300px;
+        width: 90%;
+    }
+    .cabaña1 p {
+        width: 90%;
+    }
+    .cabaña2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabaña2 img {
+        height: 300px;
+        width: 90%;
+    }
+    .cabaña2 p {
+        width: 90%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    
+}
+
+
+/****HABITACIONES TABLET****/
+@media screen and (max-width: 768px) {
+    .suiteMatrimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+    .suiteMatrimonial img {
+        height: 450px;
+        width: 85%;
+        border-bottom: 10px solid darkred;
+    }
+    .suiteInfo {
+        padding-left: 60px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        padding-top: 0px;
+        width: 90%;
+    }
+    .servicios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/**** HABITACIONES MOBILE ****/
+@media screen and (max-width: 480px) {
+    .suiteMatrimonial {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    .suiteMatrimonial img {
+        height: 350px;
+        width: 100%;
+        border-bottom: 10px solid darkred;
+    }
+    .suiteInfo {
+        flex-direction: column;
+        padding-left: 60px;
+        padding-bottom: 60px;
+        padding-right: 60px;
+        padding-top: 0px;
+        width: 90%;
+    }
+    .NOTA {
+        margin-top: 30px;
+    }
+    
+}
