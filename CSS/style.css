@@ -1,4 +1,9 @@
 @charset "UTF-8";
+#tarifasPromos .cotizacion div, #tarifasPromos .cotizacion, #tarifasPromos .tarifas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 * {
   margin: 0;
@@ -13,39 +18,32 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 header .barraNavegacion {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-
 header .barraNavegacion img {
   width: 100px;
 }
-
 header .barraNavegacion h1 {
   font-size: 45px;
   color: antiquewhite;
 }
-
 header .enlaces {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
 header .enlaces li {
   display: flex;
   margin: 0 20px;
   font-weight: 700;
 }
-
 header .enlaces li a {
   text-decoration: none;
   color: antiquewhite;
 }
-
 header .enlaces li a:hover {
   color: brown;
 }
@@ -68,13 +66,11 @@ footer {
   flex-wrap: wrap;
   padding: 25px 0;
 }
-
 footer .footer__info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 footer .footer__info ul {
   display: flex;
   align-items: center;
@@ -83,166 +79,8 @@ footer .footer__info ul {
   width: 100%;
   margin: 10px;
 }
-
 footer .footer__info ul li img {
   width: 50px;
-}
-
-/****INDEX TABLET ****/
-@media (max-width: 768px) {
-  .imagenes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imagenes img {
-    height: 400px;
-    width: 90%;
-  }
-
-  .cabaña1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cabaña1 img {
-    height: 400px;
-    width: 90%;
-  }
-
-  .cabaña1 p {
-    width: 90%;
-  }
-
-  .cabaña2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cabaña2 img {
-    height: 400px;
-    width: 90%;
-  }
-
-  .cabaña2 p {
-    width: 90%;
-  }
-
-  .Nosotros img {
-    object-fit: cover;
-  }
-}
-
-/**** INDEX MOBILE ****/
-@media screen and (max-width: 480px) {
-  .imagenes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imagenes img {
-    height: 300px;
-    width: 90%;
-  }
-
-  .video iframe {
-    width: 90%;
-  }
-
-  .Nosotros img {
-    height: 500px;
-  }
-
-  .Nosotros img {
-    object-fit: cover;
-  }
-
-  .cabaña1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cabaña1 img {
-    height: 300px;
-    width: 90%;
-  }
-
-  .cabaña1 p {
-    width: 90%;
-  }
-
-  .cabaña2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cabaña2 img {
-    height: 300px;
-    width: 90%;
-  }
-
-  .cabaña2 p {
-    width: 90%;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-}
-
-/****HABITACIONES TABLET****/
-@media screen and (max-width: 768px) {
-  .suiteMatrimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .suiteMatrimonial img {
-    height: 450px;
-    width: 85%;
-    border-bottom: 10px solid darkred;
-  }
-
-  .suiteInfo {
-    padding-left: 60px;
-    padding-bottom: 20px;
-    padding-right: 60px;
-    padding-top: 0px;
-    width: 90%;
-  }
-
-  .servicios {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/**** HABITACIONES MOBILE ****/
-@media screen and (max-width: 480px) {
-  .suiteMatrimonial {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0px;
-  }
-
-  .suiteMatrimonial img {
-    height: 350px;
-    width: 100%;
-    border-bottom: 10px solid darkred;
-  }
-
-  .suiteInfo {
-    flex-direction: column;
-    padding-left: 60px;
-    padding-bottom: 60px;
-    padding-right: 60px;
-    padding-top: 0px;
-    width: 90%;
-  }
-
-  .NOTA {
-    margin-top: 30px;
-  }
 }
 
 .portada {
@@ -251,16 +89,13 @@ footer .footer__info ul li img {
   justify-content: center;
   align-items: center;
 }
-
 .portada h3 {
   text-align: center;
   padding: 5px;
 }
-
 .portada .Mox {
   text-align: center;
 }
-
 .portada p {
   padding: 5px;
 }
@@ -272,7 +107,6 @@ footer .footer__info ul li img {
   align-items: center;
   width: 100%;
 }
-
 .imagenes img {
   height: 450px;
   width: 50%;
@@ -288,7 +122,6 @@ footer .footer__info ul li img {
   height: 100%;
   padding: 15px;
 }
-
 .video iframe {
   height: 450px;
   width: 75%;
@@ -301,19 +134,16 @@ footer .footer__info ul li img {
   align-items: center;
   flex-direction: column;
 }
-
 .Nosotros h3 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
 .Nosotros p {
   text-align: center;
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .Nosotros img {
   width: 97%;
   height: 750px;
@@ -327,13 +157,11 @@ footer .footer__info ul li img {
   align-items: center;
   width: 100%;
 }
-
 .cabaña1 p {
   flex-direction: column;
   width: 50%;
   padding: 10px;
 }
-
 .cabaña1 img {
   padding: 10px;
   width: 50%;
@@ -347,12 +175,10 @@ footer .footer__info ul li img {
   flex-wrap: wrap;
   width: 100%;
 }
-
 .cabaña2 p {
   width: 50%;
   padding: 10px;
 }
-
 .cabaña2 img {
   padding: 10px;
   width: 50%;
@@ -365,12 +191,10 @@ footer .footer__info ul li img {
   flex-wrap: wrap;
   padding: 10px;
 }
-
 .Habitaciones h2 {
   line-height: 1.5em;
   font-size: 2.5em;
 }
-
 .Habitaciones p {
   line-height: 1.3em;
   font-size: 1.3em;
@@ -381,7 +205,6 @@ footer .footer__info ul li img {
   flex-wrap: wrap;
   margin: 20px;
 }
-
 .suite .suiteMatrimonial {
   display: flex;
   align-items: start;
@@ -389,32 +212,26 @@ footer .footer__info ul li img {
   width: 100%;
   padding-bottom: 25px;
 }
-
 .suite .suiteMatrimonial img {
   width: 50%;
 }
-
 .suite .atardecer {
   height: 450px;
   width: 800px;
 }
-
 .suite .suiteInfo {
   padding: 45px;
   margin-top: 50px;
   width: 50%;
 }
-
 .suite .suiteInfo h4 {
   font-size: 1.5em;
   border-bottom: 1px solid black;
   margin-bottom: 15px;
 }
-
 .suite .suiteInfo p {
   margin-bottom: 25px;
 }
-
 .suite .suiteInfo a {
   font-weight: 900;
   text-decoration: none;
@@ -442,22 +259,19 @@ footer .footer__info ul li img {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .servicios .serviciosIncluidos {
   display: flex;
   flex-direction: column;
   list-style: square;
   margin-bottom: 10px;
 }
-
 .servicios .serviciosIncluidos p {
   font-weight: bolder;
 }
 
 #gridContanto {
   display: grid;
-  grid-template-columns: auto auto auto;
-  /* Tres columnas igualmente distribuidas */
+  grid-template-columns: auto auto auto; /* Tres columnas igualmente distribuidas */
   grid-template-areas: "header   header    header" "seccion1 seccion1  aside" "seccion2 seccion2  aside" "footer   footer    footer";
   min-height: 100vh;
 }
@@ -524,6 +338,150 @@ header {
 
 footer {
   grid-area: footer;
+}
+
+#tarifasPromos {
+  display: flex;
+}
+#tarifasPromos .tarifas h1 {
+  line-height: 1.3em;
+  font-size: 2em;
+}
+#tarifasPromos .tarifas p {
+  line-height: 1.2em;
+  font-size: 1.3em;
+}
+#tarifasPromos .cotizacion div {
+  padding: 40px;
+}
+
+/****INDEX TABLET ****/
+@media (max-width: 768px) {
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagenes img {
+    height: 400px;
+    width: 90%;
+  }
+  .cabaña1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cabaña1 img {
+    height: 400px;
+    width: 90%;
+  }
+  .cabaña1 p {
+    width: 90%;
+  }
+  .cabaña2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cabaña2 img {
+    height: 400px;
+    width: 90%;
+  }
+  .cabaña2 p {
+    width: 90%;
+  }
+  .Nosotros img {
+    object-fit: cover;
+  }
+}
+/**** INDEX MOBILE ****/
+@media screen and (max-width: 480px) {
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagenes img {
+    height: 300px;
+    width: 90%;
+  }
+  .video iframe {
+    width: 90%;
+  }
+  .Nosotros img {
+    height: 500px;
+  }
+  .Nosotros img {
+    object-fit: cover;
+  }
+  .cabaña1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cabaña1 img {
+    height: 300px;
+    width: 90%;
+  }
+  .cabaña1 p {
+    width: 90%;
+  }
+  .cabaña2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cabaña2 img {
+    height: 300px;
+    width: 90%;
+  }
+  .cabaña2 p {
+    width: 90%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+/****HABITACIONES TABLET****/
+@media screen and (max-width: 768px) {
+  .suiteMatrimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .suiteMatrimonial img {
+    height: 450px;
+    width: 85%;
+    border-bottom: 10px solid darkred;
+  }
+  .suiteInfo {
+    padding-left: 60px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-top: 0px;
+    width: 90%;
+  }
+  .servicios {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/**** HABITACIONES MOBILE ****/
+@media screen and (max-width: 480px) {
+  .suiteMatrimonial {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  .suiteMatrimonial img {
+    height: 350px;
+    width: 100%;
+    border-bottom: 10px solid darkred;
+  }
+  .suiteInfo {
+    flex-direction: column;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+    width: 90%;
+  }
+  .NOTA {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

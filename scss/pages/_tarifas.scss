@@ -1,7 +1,28 @@
+#tarifasPromos {
+    display: flex;
 
-#tarifas {
-    width: 50%;
-}
-#promos {
-    width: 50%;
+    .tarifas {
+        @extend %flex;
+
+        h1 {
+            line-height: 1.3em;
+            font-size: 2.0em;
+        }
+
+        p {
+            line-height: 1.2em;
+            font-size: 1.3em;
+        }
+    }
+
+    .cotizacion {
+        @extend %flex;
+
+        div {
+            @extend %flex;
+            padding: 40px;
+
+        }
+
+    }
 }
