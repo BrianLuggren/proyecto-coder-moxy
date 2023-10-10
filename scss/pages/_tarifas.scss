@@ -2,27 +2,106 @@
     display: flex;
 
     .tarifas {
-        @extend %flex;
+        @include flex;
+        margin: 10px;
 
-        h1 {
-            line-height: 1.3em;
-            font-size: 2.0em;
+        h2 {
+            @extend %titulo;
+
         }
-
         p {
-            line-height: 1.2em;
-            font-size: 1.3em;
+            @extend %info;
+            margin-bottom: 10px;
         }
     }
 
     .cotizacion {
-        @extend %flex;
+        @include flex;
+        border-bottom: 1px solid black;
 
         div {
-            @extend %flex;
-            padding: 40px;
+            @include flex;
+            padding: 15px;
 
+            h4 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+            p {
+                font-weight: 900;
+                margin-bottom: 15px;
+            }
+            a {
+                @extend %masInfo;
+                margin-bottom: 20px;
+                color: green;
+
+                &:hover {
+                    color: brown;
+                }
+            }
         }
+    }
+    .ropa {
+        @extend %info;
+        margin-bottom: 24px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .infoRopa {
+        @include flex; 
+        @extend %margenes;
 
+        div p {
+            @extend %margenes;
+        }
+        div li {
+            list-style: square;
+            @extend %margenes;
+        }
+    }
+    .horarios {
+        @include flex;
+        @extend %margenes;
+        margin-top: 20px;
+        font-weight: bold;
+        color: brown;
+        margin-top: 50px;
+
+        div p {
+            padding: 30px;
+        }
+    }
+
+    .tituloPromo {
+        line-height: 1.5em;
+        font-size: 2.5em;
+        text-align: center;
+        color: red;
+        margin-top: 54px;
+        margin-bottom: 20px;
+    }
+    .promociones {
+        @include flex;
+
+        div {
+            @extend %margenes;
+            border-bottom: 1px solid black;
+            margin-bottom: 80px;
+            
+            h4 {
+                line-height: 1.1em;
+                font-size: 1.1em;
+                margin-bottom: 35px;
+            }
+            span {
+                color: red;
+                font-weight: bold;
+            }
+        }
+        .aprovecha h4 {
+            color: red;
+            text-align: center;
+        }
     }
 }

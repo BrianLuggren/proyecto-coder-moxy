@@ -1,8 +1,23 @@
 @charset "UTF-8";
-#tarifasPromos .cotizacion div, #tarifasPromos .cotizacion, #tarifasPromos .tarifas {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+#tarifasPromos .tarifas h2 {
+  line-height: 1.5em;
+  font-size: 2.5em;
+}
+
+#tarifasPromos .ropa, #tarifasPromos .tarifas p {
+  line-height: 1.3em;
+  font-size: 1.3em;
+}
+
+#tarifasPromos .cotizacion div a {
+  font-weight: 900;
+  text-decoration: none;
+  list-style: none;
+}
+
+#tarifasPromos .promociones div, #tarifasPromos .horarios, #tarifasPromos .infoRopa div li, #tarifasPromos .infoRopa div p, #tarifasPromos .infoRopa {
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 * {
@@ -98,6 +113,8 @@ footer .footer__info ul li img {
 }
 .portada p {
   padding: 5px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .imagenes {
@@ -106,9 +123,10 @@ footer .footer__info ul li img {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  margin-bottom: 25px;
 }
 .imagenes img {
-  height: 450px;
+  height: 650px;
   width: 50%;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -123,7 +141,7 @@ footer .footer__info ul li img {
   padding: 15px;
 }
 .video iframe {
-  height: 450px;
+  height: 550px;
   width: 75%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -146,7 +164,7 @@ footer .footer__info ul li img {
 }
 .Nosotros img {
   width: 97%;
-  height: 750px;
+  height: 800px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -156,11 +174,17 @@ footer .footer__info ul li img {
   flex-wrap: nowrap;
   align-items: center;
   width: 100%;
+  margin-top: 25px;
 }
-.cabaña1 p {
+.cabaña1 .descripcionCabaña {
+  display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 10px;
+}
+.cabaña1 .descripcionCabaña p {
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 }
 .cabaña1 img {
   padding: 10px;
@@ -172,12 +196,17 @@ footer .footer__info ul li img {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
+  height: 650px;
 }
-.cabaña2 p {
-  width: 50%;
-  padding: 10px;
+.cabaña2 .descripcionCabaña {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cabaña2 .descripcionCabaña p {
+  margin: 35px;
 }
 .cabaña2 img {
   padding: 10px;
@@ -236,6 +265,10 @@ footer .footer__info ul li img {
   font-weight: 900;
   text-decoration: none;
   list-style: none;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.suite .suiteInfo a:hover {
   color: brown;
 }
 
@@ -343,16 +376,96 @@ footer {
 #tarifasPromos {
   display: flex;
 }
-#tarifasPromos .tarifas h1 {
-  line-height: 1.3em;
-  font-size: 2em;
+#tarifasPromos .tarifas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 #tarifasPromos .tarifas p {
-  line-height: 1.2em;
-  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+#tarifasPromos .cotizacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
 }
 #tarifasPromos .cotizacion div {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+#tarifasPromos .cotizacion div h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+#tarifasPromos .cotizacion div p {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+#tarifasPromos .cotizacion div a {
+  margin-bottom: 20px;
+  color: green;
+}
+#tarifasPromos .cotizacion div a:hover {
+  color: brown;
+}
+#tarifasPromos .ropa {
+  margin-bottom: 24px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#tarifasPromos .infoRopa {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#tarifasPromos .infoRopa div li {
+  list-style: square;
+}
+#tarifasPromos .horarios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-weight: bold;
+  color: brown;
+  margin-top: 50px;
+}
+#tarifasPromos .horarios div p {
+  padding: 30px;
+}
+#tarifasPromos .tituloPromo {
+  line-height: 1.5em;
+  font-size: 2.5em;
+  text-align: center;
+  color: red;
+  margin-top: 54px;
+  margin-bottom: 20px;
+}
+#tarifasPromos .promociones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#tarifasPromos .promociones div {
+  border-bottom: 1px solid black;
+  margin-bottom: 80px;
+}
+#tarifasPromos .promociones div h4 {
+  line-height: 1.1em;
+  font-size: 1.1em;
+  margin-bottom: 35px;
+}
+#tarifasPromos .promociones div span {
+  color: red;
+  font-weight: bold;
+}
+#tarifasPromos .promociones .aprovecha h4 {
+  color: red;
+  text-align: center;
 }
 
 /****INDEX TABLET ****/

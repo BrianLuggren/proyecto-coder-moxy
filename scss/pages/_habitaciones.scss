@@ -51,7 +51,12 @@
             font-weight: 900;
             text-decoration: none;
             list-style: none;
-            color: brown;
+            color: black;
+            border-bottom: 1px solid gray;
+
+            &:hover {
+                color: brown;
+            }
         }
     }
 }
