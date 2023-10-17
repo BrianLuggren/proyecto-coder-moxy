@@ -1,32 +1,4 @@
-#gridContanto {
-    display: grid;
-    grid-template-columns: auto auto auto; /* Tres columnas igualmente distribuidas */
-    grid-template-areas: 
-        "header   header    header"
-        "seccion1 seccion1  aside"
-        "seccion2 seccion2  aside"
-        "footer   footer    footer";
-    min-height: 100vh;
- }
-.mainContact{
-     display: grid;
-     grid-template-areas:
-         "seccion1 seccion1 seccion1"
-         "seccion2 seccion2 seccion2";
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: auto;
-     grid-gap: 20px;
-     padding: 60px;
- }
- header {
-    grid-area: header;
- }
- #seccion1 {
-    grid-area: seccion1;
- }
- #seccion2 {
-    grid-area: seccion2;
- }
+
  .llegar {
     display:flex;
     align-items: center;
@@ -38,15 +10,8 @@
     margin: 0 65px;
     border-radius: 10px;
 }
-
-#comoLlegar{
-    margin-top: 15px;
-}
  .estamos{
     width: 70%;
- }
- .aside {
-    grid-area: aside;
  }
  .asideContacto {
     display:flex;
@@ -59,7 +24,4 @@
     height: 200px;
     padding: 5px 0px;
     margin-right: 5px;
- }
- footer {
-    grid-area: footer;
  }

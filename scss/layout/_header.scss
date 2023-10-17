@@ -1,9 +1,13 @@
 /*** HEADER ***/
+.navbar {
+    display:none
+ }
 header {
     background-color: grey;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    margin-bottom: 30px;
 
     .barraNavegacion {
         display: flex;
@@ -37,5 +41,22 @@ header {
                 }
             }
         }
+    }
+}
+.container-fluid {
+    display:flex;
+    background-color: grey;
+    color: antiquewhite;
+
+    a {
+        color: antiquewhite;
+
+        &:hover {
+            color: brown;
+        }
+    }
+
+    img {
+        width: 100px;
     }
 }
