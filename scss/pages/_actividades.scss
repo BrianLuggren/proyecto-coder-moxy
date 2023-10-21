@@ -1,0 +1,18 @@
+.actividadesEntorno {
+
+    .tituloActividades {
+        border: 1px solid brown;
+        background-color: burlywood;
+    }
+    .actividades {
+        padding: 10px;
+
+        .card {
+            background-color: burlywood;
+
+            img {
+                height: 300px;
+            }
+        }
+    }
+}

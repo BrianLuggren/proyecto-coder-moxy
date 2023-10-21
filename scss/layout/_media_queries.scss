@@ -1,31 +1,33 @@
- 
  /****INDEX TABLET ****/
- @media (max-width: 768px) {
+ @media screen and (max-width: 1024px) {
     .imagenes {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
 
         img {
-            height: 400px;
+            height: auto;
             width: 90%;
         }
     }
+
     .cabaña1 {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
 
         img {
-            height: 400px;
+            height: auto;
             width: 90%;
         }
+
         .descripcionCabaña p {
             text-align: center;
             padding: 20px;
             width: 90%;
         }
     }
+
     .cabaña2 {
         flex-direction: column;
         align-items: center;
@@ -35,122 +37,284 @@
             height: auto;
             width: 90%;
         }
+
         .descripcionCabaña p {
             text-align: center;
             padding: 20px;
             width: 90%;
         }
     }
-    .Nosotros img {
-        object-fit: cover;
-    }
-    .enlacesEscritorio {
-        display: none;
-    }
-    .navbar {
-        display: initial;
-    }
-    
-}
-/**** INDEX MOBILE ****/
-@media screen and (max-width: 480px) {
-    .imagenes {
-        flex-direction: column;
-        align-items: center;
+ }
 
-        img {
-            height: 300px;
-            width: 90%;
-        }
-    }
-    
-    .video iframe {
-        width: 90%;
-    }
-    .Nosotros img {
-        height: 500px;
+ @media (max-width: 768px) {
+     .imagenes {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: wrap;
 
-        & {
-            object-fit: cover;
-        }
-    }
-    .cabaña1 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cabaña1 img {
-        height: 300px;
-        width: 90%;
-    }
-    .cabaña1 p {
-        width: 90%;
-    }
-    .cabaña2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cabaña2 img {
-        height: 300px;
-        width: 90%;
-    }
-    .cabaña2 p {
-        width: 90%;
-    }
-    .footer {
-        flex-direction: column;
-    }
-    
-}
+         img {
+             height: 400px;
+             width: 90%;
+         }
+     }
+
+     .cabaña1 {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: wrap;
+
+         img {
+             height: 400px;
+             width: 90%;
+         }
+
+         .descripcionCabaña p {
+             text-align: center;
+             padding: 20px;
+             width: 90%;
+         }
+     }
+
+     .cabaña2 {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: nowrap;
+
+         img {
+             height: auto;
+             width: 90%;
+         }
+
+         .descripcionCabaña p {
+             text-align: center;
+             padding: 20px;
+             width: 90%;
+         }
+     }
+
+     .Nosotros img {
+         object-fit: cover;
+     }
+
+     .enlacesEscritorio {
+         display: none;
+     }
+
+     .navbar {
+         display: initial;
+     }
+
+ }
+
+ /**** INDEX MOBILE ****/
+ @media screen and (max-width: 480px) {
+     .imagenes {
+         flex-direction: column;
+         align-items: center;
+
+         img {
+             height: 300px;
+             width: 90%;
+         }
+     }
+
+     .video iframe {
+         width: 90%;
+     }
+
+     .Nosotros img {
+         height: 500px;
+
+         & {
+             object-fit: cover;
+         }
+     }
+
+     .cabaña1 {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .cabaña1 img {
+         height: 300px;
+         width: 90%;
+     }
+
+     .cabaña1 p {
+         width: 90%;
+     }
+
+     .cabaña2 {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .cabaña2 img {
+         height: 300px;
+         width: 90%;
+     }
+
+     .cabaña2 p {
+         width: 90%;
+     }
+
+     .footer {
+         flex-direction: column;
+     }
+ }
 
 
-/****HABITACIONES TABLET****/
-@media screen and (max-width: 768px) {
-    .suiteMatrimonial {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
+ /****HABITACIONES TABLET****/
+ @media screen and (max-width: 768px) {
+     .suite {
+         margin: 15px;
 
-        img {
-            height: 450px;
-            width: 85%;
-            border-bottom: 10px solid darkred;
-        }
-        .suiteInfo {
-            padding-left: 60px;
-            padding-bottom: 20px;
-            padding-right: 60px;
-            padding-top: 0px;
-            width: 90%;
-        }
-    }
-    .servicios {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-/**** HABITACIONES MOBILE ****/
-@media screen and (max-width: 480px) {
-    .suiteMatrimonial {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 0px;
+         .suiteMatrimonial {
+             flex-direction: column-reverse;
+             align-items: center;
+             text-align: center;
+             flex-wrap: wrap;
 
-        img {
-            height: 350px;
+             img {
+                 height: 450px;
+                 width: 100%;
+                 border-bottom: 10px solid darkred;
+             }
+
+             .suiteInfo {
+                 padding-left: 60px;
+                 padding-bottom: 20px;
+                 padding-right: 60px;
+                 padding-top: 0px;
+                 width: 100%;
+
+                 h4 {
+                     text-align: center;
+                 }
+
+                 p {
+                     text-align: start;
+                 }
+             }
+         }
+     }
+
+     .servicios {
+         flex-direction: column;
+         align-items: flex-start;
+         margin: 10px;
+     }
+ }
+
+ /**** HABITACIONES MOBILE ****/
+ @media screen and (max-width: 480px) {
+     .Habitaciones {
+         width: 75%;
+
+         h2 {
+             line-height: 1.2em;
+             font-size: 2.1em;
+         }
+
+         p {
+             line-height: 1.1em;
+             font-size: 1.1em;
+         }
+     }
+
+     .suite {
+
+         .NOTA {
+             margin-top: 30px;
+         }
+
+         .mobile {
+             display: initial;
+
+             .card-body {
+                 background-color: rgb(255, 218, 172);
+
+                 h4 {
+                     border-bottom: 1px black solid;
+                 }
+
+                 a {
+                     text-decoration: none;
+                     list-style: none;
+                     color: black;
+                     border-bottom: 1px solid gray;
+
+                     &:hover {
+                         color: brown;
+                     }
+                 }
+             }
+         }
+
+         .suiteMatrimonial {
+             display: none;
+         }
+     }
+ }
+
+ /**** CONTACTO ****/
+
+ @media screen and (max-width: 1024px) {
+    .mapaUbicacion {
+        flex-direction: column;
+
+        .llegar {
             width: 100%;
-            border-bottom: 10px solid darkred;
+
+            iframe {
+                height: 600px;
+                width: 100%;
+            }
         }
-        .suiteInfo {
-            flex-direction: column;
-            padding-left: 60px;
-            padding-bottom: 60px;
-            padding-right: 60px;
-            padding-top: 0px;
-            width: 90%;
+        .estamos {
+            width: 100%;
+
+            p {
+                margin-bottom: 40px;
+            }
         }
     }
-    .NOTA {
-        margin-top: 30px;
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .mapaUbicacion {
+        flex-direction: column;
+
+        .llegar iframe {
+            width: 700px;
+            height: 500px;
+        }
+    }   
+ }
+
+ @media screen and (max-width: 480px) {
+    .mapaUbicacion {
+        flex-direction: column;
+
+        .llegar iframe {
+            width: auto;
+            height: 500px;
+        }
+        
+        .estamos {
+            width: 100%;
+
+        }
+    }   
+ }
+ /**** Actividades Entorno ****/
+ @media screen and (max-width: 480px) {
+    .actividades {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        
     }
     
-}
+ }

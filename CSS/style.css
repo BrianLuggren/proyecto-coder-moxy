@@ -72,6 +72,7 @@ header .enlaces li a:hover {
   display: flex;
   background-color: grey;
   color: antiquewhite;
+  margin-bottom: 25px;
 }
 .container-fluid a {
   color: antiquewhite;
@@ -185,6 +186,7 @@ footer .footer__info ul li img {
 }
 .Nosotros p {
   text-align: center;
+  padding-bottom: 25px;
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -240,6 +242,10 @@ footer .footer__info ul li img {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+.mobile {
+  display: none;
+}
+
 .Habitaciones {
   display: flex;
   flex-direction: column;
@@ -256,23 +262,16 @@ footer .footer__info ul li img {
 }
 
 .suite {
-  display: flex;
-  flex-wrap: wrap;
   margin: 20px;
 }
 .suite .suiteMatrimonial {
   display: flex;
-  align-items: start;
   flex-direction: row-reverse;
   width: 100%;
   padding-bottom: 25px;
 }
 .suite .suiteMatrimonial img {
   width: 50%;
-}
-.suite .atardecer {
-  height: 450px;
-  width: 800px;
 }
 .suite .suiteInfo {
   padding: 45px;
@@ -328,35 +327,31 @@ footer .footer__info ul li img {
   font-weight: bolder;
 }
 
-.llegar {
+.row {
+  margin-bottom: 25px;
+}
+
+.mapaUbicacion {
   display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.mapaUbicacion .llegar {
   align-items: center;
-  flex-direction: row-reverse;
   justify-content: center;
-  width: 100%;
+  width: 50%;
 }
-
-.llegar iframe {
-  margin: 0 65px;
+.mapaUbicacion .llegar iframe {
   border-radius: 10px;
+  height: 825px;
 }
-
-.estamos {
-  width: 70%;
-}
-
-.asideContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.asideImage {
-  width: 250px;
-  height: 200px;
-  padding: 5px 0px;
-  margin-right: 5px;
+.mapaUbicacion .estamos {
+  width: 50%;
 }
 
 #tarifasPromos {
@@ -393,7 +388,7 @@ footer .footer__info ul li img {
 }
 #tarifasPromos .cotizacion div a {
   margin-bottom: 20px;
-  color: green;
+  color: red;
 }
 #tarifasPromos .cotizacion div a:hover {
   color: brown;
@@ -454,7 +449,60 @@ footer .footer__info ul li img {
   text-align: center;
 }
 
+.actividadesEntorno .tituloActividades {
+  border: 1px solid brown;
+  background-color: burlywood;
+}
+.actividadesEntorno .actividades {
+  padding: 10px;
+}
+.actividadesEntorno .actividades .card {
+  background-color: burlywood;
+}
+.actividadesEntorno .actividades .card img {
+  height: 300px;
+}
+
 /****INDEX TABLET ****/
+@media screen and (max-width: 1024px) {
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .imagenes img {
+    height: auto;
+    width: 90%;
+  }
+  .cabaña1 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cabaña1 img {
+    height: auto;
+    width: 90%;
+  }
+  .cabaña1 .descripcionCabaña p {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+  }
+  .cabaña2 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .cabaña2 img {
+    height: auto;
+    width: 90%;
+  }
+  .cabaña2 .descripcionCabaña p {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
   .imagenes {
     flex-direction: column;
@@ -550,50 +598,124 @@ footer .footer__info ul li img {
 }
 /****HABITACIONES TABLET****/
 @media screen and (max-width: 768px) {
-  .suiteMatrimonial {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
+  .suite {
+    margin: 15px;
   }
-  .suiteMatrimonial img {
+  .suite .suiteMatrimonial {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .suite .suiteMatrimonial img {
     height: 450px;
-    width: 85%;
+    width: 100%;
     border-bottom: 10px solid darkred;
   }
-  .suiteMatrimonial .suiteInfo {
+  .suite .suiteMatrimonial .suiteInfo {
     padding-left: 60px;
     padding-bottom: 20px;
     padding-right: 60px;
     padding-top: 0px;
-    width: 90%;
+    width: 100%;
+  }
+  .suite .suiteMatrimonial .suiteInfo h4 {
+    text-align: center;
+  }
+  .suite .suiteMatrimonial .suiteInfo p {
+    text-align: start;
   }
   .servicios {
     flex-direction: column;
     align-items: flex-start;
+    margin: 10px;
   }
 }
 /**** HABITACIONES MOBILE ****/
 @media screen and (max-width: 480px) {
-  .suiteMatrimonial {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0px;
+  .Habitaciones {
+    width: 75%;
   }
-  .suiteMatrimonial img {
-    height: 350px;
-    width: 100%;
-    border-bottom: 10px solid darkred;
+  .Habitaciones h2 {
+    line-height: 1.2em;
+    font-size: 2.1em;
   }
-  .suiteMatrimonial .suiteInfo {
-    flex-direction: column;
-    padding-left: 60px;
-    padding-bottom: 60px;
-    padding-right: 60px;
-    padding-top: 0px;
-    width: 90%;
+  .Habitaciones p {
+    line-height: 1.1em;
+    font-size: 1.1em;
   }
-  .NOTA {
+  .suite .NOTA {
     margin-top: 30px;
+  }
+  .suite .mobile {
+    display: initial;
+  }
+  .suite .mobile .card-body {
+    background-color: rgb(255, 218, 172);
+  }
+  .suite .mobile .card-body h4 {
+    border-bottom: 1px black solid;
+  }
+  .suite .mobile .card-body a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    border-bottom: 1px solid gray;
+  }
+  .suite .mobile .card-body a:hover {
+    color: brown;
+  }
+  .suite .suiteMatrimonial {
+    display: none;
+  }
+}
+/**** CONTACTO ****/
+@media screen and (max-width: 1024px) {
+  .mapaUbicacion {
+    flex-direction: column;
+  }
+  .mapaUbicacion .llegar {
+    width: 100%;
+  }
+  .mapaUbicacion .llegar iframe {
+    height: 600px;
+    width: 100%;
+  }
+  .mapaUbicacion .estamos {
+    width: 100%;
+  }
+  .mapaUbicacion .estamos p {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mapaUbicacion {
+    flex-direction: column;
+  }
+  .mapaUbicacion .llegar iframe {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mapaUbicacion {
+    flex-direction: column;
+  }
+  .mapaUbicacion .llegar iframe {
+    width: auto;
+    height: 500px;
+  }
+  .mapaUbicacion .estamos {
+    width: 100%;
+  }
+}
+/**** Actividades Entorno ****/
+@media screen and (max-width: 480px) {
+  .actividades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
