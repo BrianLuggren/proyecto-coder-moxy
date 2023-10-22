@@ -3,6 +3,8 @@
     .tituloActividades {
         border: 1px solid brown;
         background-color: burlywood;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .actividades {
         padding: 10px;
@@ -15,4 +17,13 @@
             }
         }
     }
+    .entorno {
+        padding: 10px;
+
+        .card img {
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
 }

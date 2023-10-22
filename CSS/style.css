@@ -452,6 +452,8 @@ footer .footer__info ul li img {
 .actividadesEntorno .tituloActividades {
   border: 1px solid brown;
   background-color: burlywood;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .actividadesEntorno .actividades {
   padding: 10px;
@@ -461,6 +463,13 @@ footer .footer__info ul li img {
 }
 .actividadesEntorno .actividades .card img {
   height: 300px;
+}
+.actividadesEntorno .entorno {
+  padding: 10px;
+}
+.actividadesEntorno .entorno .card img {
+  height: 400px;
+  object-fit: cover;
 }
 
 /****INDEX TABLET ****/
