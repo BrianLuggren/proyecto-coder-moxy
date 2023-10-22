@@ -44,6 +44,10 @@
              width: 90%;
          }
      }
+     .navbar {
+         display: none;
+     }
+
  }
 
  @media (max-width: 768px) {
@@ -99,7 +103,6 @@
      .enlacesEscritorio {
          display: none;
      }
-
      .navbar {
          display: initial;
      }
@@ -309,7 +312,7 @@
      }
  }
 
- /**** Actividades Entorno ****/
+ /**** Actividades Entorno MOBLE ****/
  @media screen and (max-width: 480px) {
      .actividades {
          display: flex;
@@ -320,7 +323,59 @@
      }
 
  }
+
+ /**** TARIFAS TABLET ****/
  @media screen and (max-width: 768px) {
-    
-    
+     #tarifasPromos {
+         flex-direction: column;
+
+         .promociones {
+             margin: 20px;
+             padding-bottom: 10px;
+             flex-direction: column;
+
+             h4 {
+                 padding-top: 10px;
+             }
+         }
+
+         .horarios {
+             margin-bottom: 5px;
+
+             div p {
+                 padding: 10px;
+             }
+         }
+
+         .booking {
+             margin-bottom: 5px;
+
+             img {
+                 width: 75%;
+             }
+         }
+     }
+ }
+
+ /**** TARIFAS MOBILE****/
+ @media screen and (max-width: 480px) {
+     #tarifasPromos {
+         flex-direction: column;
+
+         .promociones {
+             flex-direction: row-reverse;
+         }
+
+         .horarios {
+             margin-bottom: 5px;
+         }
+
+         .booking {
+             margin-bottom: 5px;
+
+             img {
+                 width: 100%;
+             }
+         }
+     }
  }

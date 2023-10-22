@@ -15,7 +15,7 @@
   list-style: none;
 }
 
-#tarifasPromos .promociones div, #tarifasPromos .horarios, #tarifasPromos .infoRopa div li, #tarifasPromos .infoRopa div p, #tarifasPromos .infoRopa {
+#tarifasPromos .horarios, #tarifasPromos .infoRopa div li, #tarifasPromos .infoRopa div p, #tarifasPromos .infoRopa {
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -81,7 +81,10 @@ header .enlaces li a:hover {
   color: brown;
 }
 .container-fluid img {
-  width: 100px;
+  width: 65px;
+}
+.container-fluid .button-navbar {
+  color: white;
 }
 
 body {
@@ -357,6 +360,12 @@ footer .footer__info ul li img {
 #tarifasPromos {
   display: flex;
 }
+#tarifasPromos .seccionTarifas {
+  margin: 0 30px;
+}
+#tarifasPromos .seccionPromos {
+  margin: 0 30px;
+}
 #tarifasPromos .tarifas {
   display: flex;
   flex-direction: column;
@@ -423,7 +432,6 @@ footer .footer__info ul li img {
   font-size: 2.5em;
   text-align: center;
   color: red;
-  margin-top: 54px;
   margin-bottom: 20px;
 }
 #tarifasPromos .promociones {
@@ -433,18 +441,18 @@ footer .footer__info ul li img {
 }
 #tarifasPromos .promociones div {
   border-bottom: 1px solid black;
-  margin-bottom: 80px;
 }
 #tarifasPromos .promociones div h4 {
   line-height: 1.1em;
   font-size: 1.1em;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 #tarifasPromos .promociones div span {
   color: red;
   font-weight: bold;
 }
 #tarifasPromos .promociones .aprovecha h4 {
+  margin-top: 30px;
   color: red;
   text-align: center;
 }
@@ -510,6 +518,9 @@ footer .footer__info ul li img {
     text-align: center;
     padding: 20px;
     width: 90%;
+  }
+  .navbar {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -718,12 +729,56 @@ footer .footer__info ul li img {
     width: 100%;
   }
 }
-/**** Actividades Entorno ****/
+/**** Actividades Entorno MOBLE ****/
 @media screen and (max-width: 480px) {
   .actividades {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+  }
+}
+/**** TARIFAS TABLET ****/
+@media screen and (max-width: 768px) {
+  #tarifasPromos {
+    flex-direction: column;
+  }
+  #tarifasPromos .promociones {
+    margin: 20px;
+    padding-bottom: 10px;
+    flex-direction: column;
+  }
+  #tarifasPromos .promociones h4 {
+    padding-top: 10px;
+  }
+  #tarifasPromos .horarios {
+    margin-bottom: 5px;
+  }
+  #tarifasPromos .horarios div p {
+    padding: 10px;
+  }
+  #tarifasPromos .booking {
+    margin-bottom: 5px;
+  }
+  #tarifasPromos .booking img {
+    width: 75%;
+  }
+}
+/**** TARIFAS MOBILE****/
+@media screen and (max-width: 480px) {
+  #tarifasPromos {
+    flex-direction: column;
+  }
+  #tarifasPromos .promociones {
+    flex-direction: row-reverse;
+  }
+  #tarifasPromos .horarios {
+    margin-bottom: 5px;
+  }
+  #tarifasPromos .booking {
+    margin-bottom: 5px;
+  }
+  #tarifasPromos .booking img {
     width: 100%;
   }
 }

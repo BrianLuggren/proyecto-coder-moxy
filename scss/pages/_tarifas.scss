@@ -1,6 +1,12 @@
 #tarifasPromos {
     display: flex;
 
+    .seccionTarifas {
+        margin: 0 30px
+    }
+    .seccionPromos {
+        margin: 0 30px
+    }
     .tarifas {
         @include flex;
         margin: 10px;
@@ -78,21 +84,18 @@
         font-size: 2.5em;
         text-align: center;
         color: red;
-        margin-top: 54px;
         margin-bottom: 20px;
     }
     .promociones {
         @include flex;
 
         div {
-            @extend %margenes;
             border-bottom: 1px solid black;
-            margin-bottom: 80px;
             
             h4 {
                 line-height: 1.1em;
                 font-size: 1.1em;
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
             span {
                 color: red;
@@ -100,6 +103,7 @@
             }
         }
         .aprovecha h4 {
+            margin-top: 30px;
             color: red;
             text-align: center;
         }
