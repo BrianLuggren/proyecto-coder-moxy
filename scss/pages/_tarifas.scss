@@ -17,7 +17,7 @@
 
     .cotizacion {
         @include flex;
-        border-bottom: 1px solid black;
+        border-width: 2px;
 
         div {
             @include flex;

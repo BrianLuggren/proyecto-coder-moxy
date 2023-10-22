@@ -44,7 +44,7 @@ header .barraNavegacion {
   flex-wrap: wrap;
 }
 header .barraNavegacion img {
-  width: 100px;
+  width: 75px;
 }
 header .barraNavegacion h1 {
   font-size: 45px;
@@ -370,7 +370,7 @@ footer .footer__info ul li img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
+  border-width: 2px;
 }
 #tarifasPromos .cotizacion div {
   display: flex;

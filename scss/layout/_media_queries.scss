@@ -1,49 +1,49 @@
  /****INDEX TABLET ****/
  @media screen and (max-width: 1024px) {
-    .imagenes {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+     .imagenes {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: wrap;
 
-        img {
-            height: auto;
-            width: 90%;
-        }
-    }
+         img {
+             height: auto;
+             width: 90%;
+         }
+     }
 
-    .cabaña1 {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+     .cabaña1 {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: wrap;
 
-        img {
-            height: auto;
-            width: 90%;
-        }
+         img {
+             height: auto;
+             width: 90%;
+         }
 
-        .descripcionCabaña p {
-            text-align: center;
-            padding: 20px;
-            width: 90%;
-        }
-    }
+         .descripcionCabaña p {
+             text-align: center;
+             padding: 20px;
+             width: 90%;
+         }
+     }
 
-    .cabaña2 {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
+     .cabaña2 {
+         flex-direction: column;
+         align-items: center;
+         flex-wrap: nowrap;
 
-        img {
-            height: auto;
-            width: 90%;
-        }
+         img {
+             height: auto;
+             width: 90%;
+         }
 
-        .descripcionCabaña p {
-            text-align: center;
-            padding: 20px;
-            width: 90%;
-        }
-    }
+         .descripcionCabaña p {
+             text-align: center;
+             padding: 20px;
+             width: 90%;
+         }
+     }
  }
 
  @media (max-width: 768px) {
@@ -260,61 +260,67 @@
  /**** CONTACTO ****/
 
  @media screen and (max-width: 1024px) {
-    .mapaUbicacion {
-        flex-direction: column;
+     .mapaUbicacion {
+         flex-direction: column;
 
-        .llegar {
-            width: 100%;
+         .llegar {
+             width: 100%;
 
-            iframe {
-                height: 600px;
-                width: 100%;
-            }
-        }
-        .estamos {
-            width: 100%;
+             iframe {
+                 height: 600px;
+                 width: 100%;
+             }
+         }
 
-            p {
-                margin-bottom: 40px;
-            }
-        }
-    }
+         .estamos {
+             width: 100%;
+
+             p {
+                 margin-bottom: 40px;
+             }
+         }
+     }
  }
- 
- @media screen and (max-width: 768px) {
-    .mapaUbicacion {
-        flex-direction: column;
 
-        .llegar iframe {
-            width: 700px;
-            height: 500px;
-        }
-    }   
+ @media screen and (max-width: 768px) {
+     .mapaUbicacion {
+         flex-direction: column;
+
+         .llegar iframe {
+             width: 700px;
+             height: 500px;
+         }
+     }
  }
 
  @media screen and (max-width: 480px) {
-    .mapaUbicacion {
-        flex-direction: column;
+     .mapaUbicacion {
+         flex-direction: column;
 
-        .llegar iframe {
-            width: auto;
-            height: 500px;
-        }
-        
-        .estamos {
-            width: 100%;
+         .llegar iframe {
+             width: auto;
+             height: 500px;
+         }
 
-        }
-    }   
+         .estamos {
+             width: 100%;
+
+         }
+     }
  }
+
  /**** Actividades Entorno ****/
  @media screen and (max-width: 480px) {
-    .actividades {
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        
-    }
+     .actividades {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         width: 100%;
+
+     }
+
+ }
+ @media screen and (max-width: 768px) {
+    
     
  }
